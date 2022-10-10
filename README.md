@@ -90,3 +90,16 @@ Start the server:
 docker-compose up -d
 
 ```
+Int this section I've modified the docker-compose file into two files one being the development and the other being the production one
+To run the dev file we use the below running command. 
+
+```
+docker-compose -f docker-compose-dev.yml up -d
+
+```
+To run the prod filwe we use the following running command.
+
+``` 
+docker-compose -f docker-compose-prod.yml up -d
+
+```
