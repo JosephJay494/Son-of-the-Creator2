@@ -81,4 +81,12 @@ python -m pip install -r requirements.txt
 
 ```
 In this section i created a container and a build an image with the name son of the creator.
-In this section I've created the docker-compose file which is responsible for running my docker container.
+In this section I've created the docker-compose file which is responsibe for running the container
+
+
+Start the server:
+
+```
+docker-compose up -d
+
+```
