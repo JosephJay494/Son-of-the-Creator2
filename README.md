@@ -103,3 +103,14 @@ To run the prod filwe we use the following running command.
 docker-compose -f docker-compose-prod.yml up -d
 
 ```
+
+In this section i have creates the jps.py in the router module which contains so html code and also have created the templates module containing the files base.html, index.html.
+
+I have also installed jinja2Tamplates package
+
+Install the required dependencies:
+
+```
+python -m pip install -r requirements.txt
+
+```
