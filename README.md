@@ -114,3 +114,10 @@ Install the required dependencies:
 python -m pip install -r requirements.txt
 
 ```
+
+In this section i install aiofiles which works with the static file that also created in this section.
+
+```
+python -m pip install -r requirements.txt
+
+```

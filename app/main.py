@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 #from  database import engine
 from .routers import post, user, auth, vote, jps
 from .config import settings
+from fastapi.staticfiles import StaticFiles
 
 
 
@@ -14,6 +15,8 @@ print(settings.database_username)
 #models.Base.metadata.create_all(bind = engine) 
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 origins = ["*"]
