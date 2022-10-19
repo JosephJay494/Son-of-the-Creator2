@@ -5,5 +5,16 @@
 {% endblock%}
 
 {% block content %}
-    <h3> Son of the Creator Home Page </h3>
+    <div class="container">
+        <h3> Son of the Creator Home Page </h3>
+        <div class= "row">
+            {% for book in books %}
+                <div class="col">
+                    {% with cbook = book %}
+                        {% include 'card.html' %}
+                    {% endwith %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

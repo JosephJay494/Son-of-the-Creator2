@@ -24,12 +24,12 @@ def get_posts(db: Session = Depends(get_db), current_user: int =  Depends(oauth2
     #print(limit)
     #posts = db.query(models.Books).filter(models.Books.title.contains(search)).limit(limit).offset(skip).all()
     
-    posts = db.query(models.Books, func.count(models.Vote.post_id).label("votes")).join(
+    books = db.query(models.Books, func.count(models.Vote.post_id).label("votes")).join(
         models.Vote, models.Vote.post_id == models.Books.id, isouter = True).group_by(models.Books.id).filter(
             models.Books.title.contains(search)).limit(limit).offset(skip).all()
     
     
-    return  posts
+    return  books
 
     
 

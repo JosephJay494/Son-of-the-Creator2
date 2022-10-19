@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 #from  database import engine
-from .routers import post, user, auth, vote, jps
+from .routers import post, user, auth, vote, jps , user_sign_up
 from .config import settings
 from fastapi.staticfiles import StaticFiles
 
@@ -35,6 +35,7 @@ app.include_router(user.router)
 app.include_router(auth.router)
 app.include_router(vote.router)
 app.include_router(jps.router)
+app.include_router(user_sign_up.router)
 
 
 
