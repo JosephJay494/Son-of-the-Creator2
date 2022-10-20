@@ -16,9 +16,9 @@ templates = Jinja2Templates(directory="templates")
 
 
 @router.get("/")
-def page(request: Request, db: Session = Depends(get_db)):
+def page(request: Request, db: Session = Depends(get_db), msg:str=None):
     books =db.query(models.Books).all() 
-    return templates.TemplateResponse("index.html", {'request': request, 'books': books} )
+    return templates.TemplateResponse("index.html", {'request': request, 'books': books, "msg": msg} )
 
 @router.get("/book/{id}")
 def get_posts(request: Request, id: int, db: Session = Depends(get_db)):

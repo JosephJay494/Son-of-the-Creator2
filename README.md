@@ -121,3 +121,8 @@ In this section i install aiofiles which works with the static file that also cr
 python -m pip install -r requirements.txt
 
 ```
+In this section I have created the the sign up module which enables for registration of users and also the navbar.html which gives the tamplate in provided when entering the site, which i have stored this file in the templates folder.
+I also created the get post_post.html which works with the user_sign_up.py module and also the card.html which is responsible for displaying the posts in the site.I also improve the code in a way that communication to the API was esatblished so as yo register on the site your registration details are directly stored into the database.
+
+
+In this section I've created the login module for loging in after the user is successfully registered.
