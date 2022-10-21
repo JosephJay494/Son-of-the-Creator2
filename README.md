@@ -126,3 +126,5 @@ I also created the get post_post.html which works with the user_sign_up.py modul
 
 
 In this section I've created the login module for loging in after the user is successfully registered.
+
+I have impover the login module under the module user_auth.py though I have encounter and error in this stage and am in the process of debugging the error
